@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="ClassDataAbstractionCoupling <= 0.5\nsamples = 28920\nvalue = [20379, 8541]", fillcolor="#f0b68c"] ;
+1 [label="NPathComplexity <= 0.5\nsamples = 23919\nvalue = [16079, 7840]", fillcolor="#f2be9a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="VisibilityModifier <= 0.5\nsamples = 21506\nvalue = [14060, 7446]", fillcolor="#f3c4a2"] ;
+1 -> 2 ;
+3 [label="samples = 17445\nvalue = [10993, 6452]", fillcolor="#f4cbad"] ;
+2 -> 3 ;
+4 [label="samples = 4061\nvalue = [3067, 994]", fillcolor="#edaa79"] ;
+2 -> 4 ;
+5 [label="JavaNCSS <= 0.5\nsamples = 2413\nvalue = [2019, 394]", fillcolor="#ea9a60"] ;
+1 -> 5 ;
+6 [label="samples = 1126\nvalue = [895, 231]", fillcolor="#eca26c"] ;
+5 -> 6 ;
+7 [label="samples = 1287\nvalue = [1124, 163]", fillcolor="#e99356"] ;
+5 -> 7 ;
+8 [label="TrailingComment <= 0.5\nsamples = 5001\nvalue = [4300, 701]", fillcolor="#e99659"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="IllegalCatch <= 0.5\nsamples = 2701\nvalue = [2255, 446]", fillcolor="#ea9a60"] ;
+8 -> 9 ;
+10 [label="samples = 1666\nvalue = [1356, 310]", fillcolor="#eb9e66"] ;
+9 -> 10 ;
+11 [label="samples = 1035\nvalue = [899, 136]", fillcolor="#e99457"] ;
+9 -> 11 ;
+12 [label="ParameterAssignment <= 0.5\nsamples = 2300\nvalue = [2045, 255]", fillcolor="#e89152"] ;
+8 -> 12 ;
+13 [label="samples = 1442\nvalue = [1256, 186]", fillcolor="#e99456"] ;
+12 -> 13 ;
+14 [label="samples = 858\nvalue = [789, 69]", fillcolor="#e78c4a"] ;
+12 -> 14 ;
+}

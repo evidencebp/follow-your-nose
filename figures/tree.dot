@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ClassFanOutComplexity <= 0.5\ngini = 0.381\nsamples = 36198\nvalue = [2803.6, 8162.0]"] ;
+1 [label="AvoidStaticImport <= 0.5\ngini = 0.346\nsamples = 26360\nvalue = [1953.9, 6821.0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Indentation <= 0.5\ngini = 0.313\nsamples = 17399\nvalue = [1229.4, 5105.0]"] ;
+1 -> 2 ;
+3 [label="gini = 0.36\nsamples = 9217\nvalue = [695.4, 2263.0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.266\nsamples = 8182\nvalue = [534.0, 2842.0]"] ;
+2 -> 4 ;
+5 [label="MissingJavadocMethod <= 0.5\ngini = 0.417\nsamples = 8961\nvalue = [724.5, 1716.0]"] ;
+1 -> 5 ;
+6 [label="gini = 0.312\nsamples = 2566\nvalue = [181.1, 755.0]"] ;
+5 -> 6 ;
+7 [label="gini = 0.461\nsamples = 6395\nvalue = [543.4, 961.0]"] ;
+5 -> 7 ;
+8 [label="AvoidStaticImport <= 0.5\ngini = 0.475\nsamples = 9838\nvalue = [849.7, 1341.0]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ReturnCount <= 0.5\ngini = 0.442\nsamples = 5316\nvalue = [441.6, 900.0]"] ;
+8 -> 9 ;
+10 [label="gini = 0.386\nsamples = 2291\nvalue = [178.5, 506.0]"] ;
+9 -> 10 ;
+11 [label="gini = 0.48\nsamples = 3025\nvalue = [263.1, 394.0]"] ;
+9 -> 11 ;
+12 [label="any-BLOCK CHECKS <= 0.5\ngini = 0.499\nsamples = 4522\nvalue = [408.1, 441.0]"] ;
+8 -> 12 ;
+13 [label="gini = 0.498\nsamples = 2751\nvalue = [253.1, 220.0]"] ;
+12 -> 13 ;
+14 [label="gini = 0.485\nsamples = 1771\nvalue = [155.0, 221.0]"] ;
+12 -> 14 ;
+}
