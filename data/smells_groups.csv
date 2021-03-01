@@ -1,0 +1,185 @@
+Smell,Group
+AbbreviationAsWordInName,NAMING CONVENTIONS CHECKS
+AbstractClassName,NAMING CONVENTIONS CHECKS
+AnnotationLocation,ANNOTATION CHECKS
+AnnotationOnSameLine,ANNOTATION CHECKS
+AnnotationUseStyle,ANNOTATION CHECKS
+AnonInnerLength,SIZE VIOLATION CHECKS
+ArrayTrailingComma,CODING CHECKS
+ArrayTypeStyle,MISC CHECKS
+AtclauseOrder,JAVADOC COMMENTS CHECKS
+AvoidDoubleBraceInitialization,CODING CHECKS
+AvoidEscapedUnicodeCharacters,MISC CHECKS
+AvoidInlineConditionals,CODING CHECKS
+AvoidNestedBlocks,BLOCK CHECKS
+AvoidNoArgumentSuperConstructorCall,CODING CHECKS
+AvoidStarImport,IMPORT CHECKS
+AvoidStaticImport,IMPORT CHECKS
+BooleanExpressionComplexity,METRICS CHECKS
+CatchParameterName,NAMING CONVENTIONS CHECKS
+ClassDataAbstractionCoupling,METRICS CHECKS
+ClassFanOutComplexity,METRICS CHECKS
+ClassMemberImpliedModifier,MODIFIER CHECKS
+ClassTypeParameterName,NAMING CONVENTIONS CHECKS
+CommentsIndentation,MISC CHECKS
+ConstantName,NAMING CONVENTIONS CHECKS
+CovariantEquals,CODING CHECKS
+CustomImportOrder,IMPORT CHECKS
+CyclomaticComplexity,METRICS CHECKS
+DeclarationOrder,CODING CHECKS
+DefaultComesLast,CODING CHECKS
+DescendantToken,MISC CHECKS
+DesignForExtension,CLASS DESIGN CHECKS
+EmptyBlock,BLOCK CHECKS
+EmptyCatchBlock,BLOCK CHECKS
+EmptyForInitializerPad,WHITESPACE CHECKS
+EmptyForIteratorPad,WHITESPACE CHECKS
+EmptyLineSeparator,WHITESPACE CHECKS
+EmptyStatement,CODING CHECKS
+EqualsAvoidNull,CODING CHECKS
+EqualsHashCode,CODING CHECKS
+ExecutableStatementCount,SIZE VIOLATION CHECKS
+ExplicitInitialization,CODING CHECKS
+FallThrough,CODING CHECKS
+FileLength,SIZE VIOLATION CHECKS
+FileTabCharacter,WHITESPACE CHECKS
+FinalClass,CLASS DESIGN CHECKS
+FinalLocalVariable,CODING CHECKS
+FinalParameters,MISC CHECKS
+GenericWhitespace,WHITESPACE CHECKS
+Header,HEADER CHECKS
+HiddenField,CODING CHECKS
+HideUtilityClassConstructor,CLASS DESIGN CHECKS
+IllegalCatch,CODING CHECKS
+IllegalCatch,ILLEGAL CHECKS
+IllegalImport,IMPORT CHECKS
+IllegalInstantiation,ILLEGAL CHECKS
+IllegalInstantiation,CODING CHECKS
+IllegalThrows,ILLEGAL CHECKS
+IllegalThrows,CODING CHECKS
+IllegalToken,CODING CHECKS
+IllegalToken,ILLEGAL CHECKS
+IllegalTokenText,CODING CHECKS
+IllegalTokenText,ILLEGAL CHECKS
+IllegalType,ILLEGAL CHECKS
+IllegalType,CODING CHECKS
+ImportControl,IMPORT CHECKS
+ImportOrder,IMPORT CHECKS
+Indentation,MISC CHECKS
+InnerAssignment,CODING CHECKS
+InnerTypeLast,CLASS DESIGN CHECKS
+InterfaceIsType,CLASS DESIGN CHECKS
+InterfaceMemberImpliedModifier,MODIFIER CHECKS
+InterfaceTypeParameterName,NAMING CONVENTIONS CHECKS
+InvalidJavadocPosition,JAVADOC COMMENTS CHECKS
+JavaNCSS,METRICS CHECKS
+JavadocBlockTagLocation,JAVADOC COMMENTS CHECKS
+JavadocContentLocation,JAVADOC COMMENTS CHECKS
+JavadocMethod,JAVADOC COMMENTS CHECKS
+JavadocMissingWhitespaceAfterAsterisk,JAVADOC COMMENTS CHECKS
+JavadocPackage,JAVADOC COMMENTS CHECKS
+JavadocParagraph,JAVADOC COMMENTS CHECKS
+JavadocStyle,JAVADOC COMMENTS CHECKS
+JavadocTagContinuationIndentation,JAVADOC COMMENTS CHECKS
+JavadocType,JAVADOC COMMENTS CHECKS
+JavadocVariable,JAVADOC COMMENTS CHECKS
+LambdaParameterName,NAMING CONVENTIONS CHECKS
+LeftCurly,BLOCK CHECKS
+LineLength,SIZE VIOLATION CHECKS
+LocalFinalVariableName,NAMING CONVENTIONS CHECKS
+LocalVariableName,NAMING CONVENTIONS CHECKS
+MagicNumber,CODING CHECKS
+MemberName,NAMING CONVENTIONS CHECKS
+MethodCount,SIZE VIOLATION CHECKS
+MethodLength,SIZE VIOLATION CHECKS
+MethodName,NAMING CONVENTIONS CHECKS
+MethodParamPad,WHITESPACE CHECKS
+MethodTypeParameterName,NAMING CONVENTIONS CHECKS
+MissingCtor,CODING CHECKS
+MissingDeprecated,ANNOTATION CHECKS
+MissingJavadocMethod,JAVADOC COMMENTS CHECKS
+MissingJavadocPackage,JAVADOC COMMENTS CHECKS
+MissingJavadocType,JAVADOC COMMENTS CHECKS
+MissingOverride,ANNOTATION CHECKS
+MissingSwitchDefault,CODING CHECKS
+ModifiedControlVariable,CODING CHECKS
+ModifierOrder,MODIFIER CHECKS
+MultipleStringLiterals,CODING CHECKS
+MultipleVariableDeclarations,CODING CHECKS
+MutableException,CLASS DESIGN CHECKS
+NPathComplexity,METRICS CHECKS
+NeedBraces,BLOCK CHECKS
+NestedForDepth,CODING CHECKS
+NestedIfDepth,CODING CHECKS
+NestedTryDepth,CODING CHECKS
+NewlineAtEndOfFile,MISC CHECKS
+NoArrayTrailingComma,CODING CHECKS
+NoClone,CODING CHECKS
+NoCodeInFile,MISC CHECKS
+NoEnumTrailingComma,CODING CHECKS
+NoFinalizer,CODING CHECKS
+NoLineWrap,WHITESPACE CHECKS
+NoWhitespaceAfter,WHITESPACE CHECKS
+NoWhitespaceBefore,WHITESPACE CHECKS
+NonEmptyAtclauseDescription,JAVADOC COMMENTS CHECKS
+OneStatementPerLine,CODING CHECKS
+OneTopLevelClass,CLASS DESIGN CHECKS
+OperatorWrap,WHITESPACE CHECKS
+OrderedProperties,MISC CHECKS
+OuterTypeFilename,MISC CHECKS
+OuterTypeNumber,SIZE VIOLATION CHECKS
+OverloadMethodsDeclarationOrder,CODING CHECKS
+PackageAnnotation,ANNOTATION CHECKS
+PackageDeclaration,CODING CHECKS
+PackageName,NAMING CONVENTIONS CHECKS
+ParameterAssignment,CODING CHECKS
+ParameterName,NAMING CONVENTIONS CHECKS
+ParameterNumber,SIZE VIOLATION CHECKS
+ParenPad,WHITESPACE CHECKS
+RedundantImport,IMPORT CHECKS
+RedundantModifier,MODIFIER CHECKS
+Regexp,REGEXP CHECKS
+RegexpHeader,HEADER CHECKS
+RegexpMultiline,REGEXP CHECKS
+RegexpOnFilename,REGEXP CHECKS
+RegexpSingleline,REGEXP CHECKS
+RegexpSinglelineJava,REGEXP CHECKS
+RequireThis,CODING CHECKS
+ReturnCount,CODING CHECKS
+RightCurly,BLOCK CHECKS
+SeparatorWrap,WHITESPACE CHECKS
+SimplifyBooleanExpression,CODING CHECKS
+SimplifyBooleanReturn,CODING CHECKS
+SingleLineJavadoc,JAVADOC COMMENTS CHECKS
+SingleSpaceSeparator,WHITESPACE CHECKS
+StaticVariableName,NAMING CONVENTIONS CHECKS
+StringLiteralEquality,CODING CHECKS
+SummaryJavadoc,JAVADOC COMMENTS CHECKS
+SuperClone,CODING CHECKS
+SuperFinalize,CODING CHECKS
+SuppressWarnings,ANNOTATION CHECKS
+SuppressWarningsHolder,ANNOTATION CHECKS
+ThrowsCount,CLASS DESIGN CHECKS
+TodoComment,MISC CHECKS
+TrailingComment,MISC CHECKS
+Translation,MISC CHECKS
+TypeName,NAMING CONVENTIONS CHECKS
+TypecastParenPad,WHITESPACE CHECKS
+UncommentedMain,MISC CHECKS
+UniqueProperties,MISC CHECKS
+UnnecessaryParentheses,CODING CHECKS
+UnnecessarySemicolonAfterOuterTypeDeclaration,CODING CHECKS
+UnnecessarySemicolonAfterOuterTypeDeclaration,UNNECESSARY CHECKS
+UnnecessarySemicolonAfterTypeMemberDeclaration,CODING CHECKS
+UnnecessarySemicolonAfterTypeMemberDeclaration,UNNECESSARY CHECKS
+UnnecessarySemicolonInEnumeration,CODING CHECKS
+UnnecessarySemicolonInEnumeration,UNNECESSARY CHECKS
+UnnecessarySemicolonInTryWithResources,UNNECESSARY CHECKS
+UnnecessarySemicolonInTryWithResources,CODING CHECKS
+UnusedImports,IMPORT CHECKS
+UpperEll,MISC CHECKS
+VariableDeclarationUsageDistance,CODING CHECKS
+VisibilityModifier,CLASS DESIGN CHECKS
+WhitespaceAfter,WHITESPACE CHECKS
+WhitespaceAround,WHITESPACE CHECKS
+WriteTag,JAVADOC COMMENTS CHECKS

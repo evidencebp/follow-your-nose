@@ -1,0 +1,8 @@
+metric,Pearson with ccp
+ccp,1.0
+NPathComplexity,0.14727453486520223
+MethodLength,0.14040667043107163
+VisibilityModifier,0.13865458879569584
+AvoidInlineConditionals,0.10432125668838213
+Sum_of_Smells,0.05815044247737041
+NestedIfDepth,0.0526749491502692

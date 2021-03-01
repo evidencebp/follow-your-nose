@@ -1,0 +1,168 @@
+feature,monotonicity
+AbstractClassName,True
+AnnotationOnSameLine,True
+AnonInnerLength,True
+ArrayTrailingComma,True
+ArrayTypeStyle,True
+AvoidInlineConditionals,True
+AvoidStarImport,True
+AvoidStaticImport,True
+BooleanExpressionComplexity,True
+ClassDataAbstractionCoupling,True
+ClassFanOutComplexity,True
+ClassMemberImpliedModifier,True
+ClassTypeParameterName,True
+CommentsIndentation,True
+CovariantEquals,True
+CyclomaticComplexity,True
+DesignForExtension,True
+EmptyForIteratorPad,True
+EqualsAvoidNull,True
+ExecutableStatementCount,True
+ExplicitInitialization,True
+FileLength,True
+FinalClass,True
+FinalLocalVariable,True
+FinalParameters,True
+GenericWhitespace,True
+HiddenField,True
+IllegalCatch,True
+IllegalType,True
+ImportControl,True
+ImportOrder,True
+Indentation,True
+InnerAssignment,True
+InnerTypeLast,True
+JavaNCSS,True
+JavadocTagContinuationIndentation,True
+LineLength,True
+MagicNumber,True
+MethodCount,True
+MethodLength,True
+MethodTypeParameterName,True
+MissingCtor,True
+MissingJavadocPackage,True
+MissingJavadocType,True
+MissingSwitchDefault,True
+ModifiedControlVariable,True
+MultipleStringLiterals,True
+NPathComplexity,True
+NeedBraces,True
+NestedIfDepth,True
+NestedTryDepth,True
+NonEmptyAtclauseDescription,True
+OneTopLevelClass,True
+OperatorWrap,True
+OuterTypeNumber,True
+OverloadMethodsDeclarationOrder,True
+ParameterAssignment,True
+ParameterNumber,True
+ParenPad,True
+Regexp,True
+RegexpOnFilename,True
+RequireThis,True
+ReturnCount,True
+RightCurly,True
+SeparatorWrap,True
+SimplifyBooleanExpression,True
+SingleSpaceSeparator,True
+StringLiteralEquality,True
+SuperClone,True
+SuppressWarnings,True
+TodoComment,True
+TrailingComment,True
+TypeName,True
+VariableDeclarationUsageDistance,True
+VisibilityModifier,True
+WhitespaceAround,True
+WriteTag,True
+any-ANNOTATION CHECKS,True
+any-BLOCK CHECKS,True
+any-CLASS DESIGN CHECKS,True
+any-CODING CHECKS,True
+any-HEADER CHECKS,True
+any-ILLEGAL CHECKS,True
+any-METRICS CHECKS,True
+any-MISC CHECKS,True
+any-MODIFIER CHECKS,True
+any-NAMING CONVENTIONS CHECKS,True
+any-REGEXP CHECKS,True
+any-SIZE VIOLATION CHECKS,True
+AbbreviationAsWordInName,False
+AnnotationLocation,False
+AnnotationUseStyle,False
+AtclauseOrder,False
+AvoidEscapedUnicodeCharacters,False
+AvoidNestedBlocks,False
+CatchParameterName,False
+ConstantName,False
+CustomImportOrder,False
+DeclarationOrder,False
+DefaultComesLast,False
+EmptyBlock,False
+EmptyCatchBlock,False
+EmptyForInitializerPad,False
+EmptyLineSeparator,False
+EmptyStatement,False
+EqualsHashCode,False
+FallThrough,False
+FileTabCharacter,False
+HideUtilityClassConstructor,False
+IllegalImport,False
+IllegalThrows,False
+IllegalToken,False
+InterfaceIsType,False
+InterfaceMemberImpliedModifier,False
+InterfaceTypeParameterName,False
+InvalidJavadocPosition,False
+JavadocMethod,False
+JavadocPackage,False
+JavadocParagraph,False
+JavadocStyle,False
+JavadocType,False
+JavadocVariable,False
+LambdaParameterName,False
+LeftCurly,False
+LocalFinalVariableName,False
+LocalVariableName,False
+MemberName,False
+MethodName,False
+MethodParamPad,False
+MissingDeprecated,False
+MissingJavadocMethod,False
+MissingOverride,False
+ModifierOrder,False
+MultipleVariableDeclarations,False
+MutableException,False
+NestedForDepth,False
+NewlineAtEndOfFile,False
+NoClone,False
+NoFinalizer,False
+NoLineWrap,False
+NoWhitespaceAfter,False
+NoWhitespaceBefore,False
+OneStatementPerLine,False
+OuterTypeFilename,False
+PackageDeclaration,False
+PackageName,False
+ParameterName,False
+RedundantImport,False
+RedundantModifier,False
+SimplifyBooleanReturn,False
+SingleLineJavadoc,False
+StaticVariableName,False
+SummaryJavadoc,False
+SuperFinalize,False
+ThrowsCount,False
+TypecastParenPad,False
+UncommentedMain,False
+UnnecessaryParentheses,False
+UnnecessarySemicolonInEnumeration,False
+UnnecessarySemicolonInTryWithResources,False
+UnusedImports,False
+UpperEll,False
+WhitespaceAfter,False
+any-IMPORT CHECKS,False
+any-JAVADOC COMMENTS CHECKS,False
+any-UNNECESSARY CHECKS,False
+any-WHITESPACE CHECKS,False

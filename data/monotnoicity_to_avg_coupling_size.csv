@@ -1,0 +1,171 @@
+feature,monotonicity
+AnnotationLocation,True
+DesignForExtension,True
+JavadocPackage,True
+MissingCtor,True
+NewlineAtEndOfFile,True
+RegexpOnFilename,True
+SuppressWarnings,True
+TypecastParenPad,True
+any-HEADER CHECKS,True
+avg_coupling_code_size_cut,True
+prev_touch_ago,True
+AbbreviationAsWordInName,False
+AbstractClassName,False
+AnnotationOnSameLine,False
+AnnotationUseStyle,False
+AnonInnerLength,False
+ArrayTrailingComma,False
+ArrayTypeStyle,False
+AtclauseOrder,False
+AvoidEscapedUnicodeCharacters,False
+AvoidInlineConditionals,False
+AvoidNestedBlocks,False
+AvoidStarImport,False
+AvoidStaticImport,False
+BooleanExpressionComplexity,False
+CatchParameterName,False
+ClassDataAbstractionCoupling,False
+ClassFanOutComplexity,False
+ClassMemberImpliedModifier,False
+ClassTypeParameterName,False
+CommentsIndentation,False
+ConstantName,False
+CovariantEquals,False
+CustomImportOrder,False
+CyclomaticComplexity,False
+DeclarationOrder,False
+DefaultComesLast,False
+EmptyBlock,False
+EmptyCatchBlock,False
+EmptyForInitializerPad,False
+EmptyForIteratorPad,False
+EmptyLineSeparator,False
+EmptyStatement,False
+EqualsAvoidNull,False
+EqualsHashCode,False
+ExecutableStatementCount,False
+ExplicitInitialization,False
+FallThrough,False
+FileLength,False
+FileTabCharacter,False
+FinalClass,False
+FinalLocalVariable,False
+FinalParameters,False
+GenericWhitespace,False
+HiddenField,False
+HideUtilityClassConstructor,False
+IllegalCatch,False
+IllegalImport,False
+IllegalThrows,False
+IllegalToken,False
+IllegalType,False
+ImportControl,False
+ImportOrder,False
+Indentation,False
+InnerAssignment,False
+InnerTypeLast,False
+InterfaceIsType,False
+InterfaceMemberImpliedModifier,False
+InterfaceTypeParameterName,False
+InvalidJavadocPosition,False
+JavaNCSS,False
+JavadocMethod,False
+JavadocParagraph,False
+JavadocStyle,False
+JavadocTagContinuationIndentation,False
+JavadocType,False
+JavadocVariable,False
+LambdaParameterName,False
+LeftCurly,False
+LineLength,False
+LocalFinalVariableName,False
+LocalVariableName,False
+MagicNumber,False
+MemberName,False
+MethodCount,False
+MethodLength,False
+MethodName,False
+MethodParamPad,False
+MethodTypeParameterName,False
+MissingDeprecated,False
+MissingJavadocMethod,False
+MissingJavadocPackage,False
+MissingJavadocType,False
+MissingOverride,False
+MissingSwitchDefault,False
+ModifiedControlVariable,False
+ModifierOrder,False
+MultipleStringLiterals,False
+MultipleVariableDeclarations,False
+MutableException,False
+NPathComplexity,False
+NeedBraces,False
+NestedForDepth,False
+NestedIfDepth,False
+NestedTryDepth,False
+NoClone,False
+NoFinalizer,False
+NoLineWrap,False
+NoWhitespaceAfter,False
+NoWhitespaceBefore,False
+NonEmptyAtclauseDescription,False
+OneStatementPerLine,False
+OneTopLevelClass,False
+OperatorWrap,False
+OuterTypeFilename,False
+OuterTypeNumber,False
+OverloadMethodsDeclarationOrder,False
+PackageDeclaration,False
+PackageName,False
+ParameterAssignment,False
+ParameterName,False
+ParameterNumber,False
+ParenPad,False
+RedundantImport,False
+RedundantModifier,False
+Regexp,False
+RequireThis,False
+ReturnCount,False
+RightCurly,False
+SeparatorWrap,False
+SimplifyBooleanExpression,False
+SimplifyBooleanReturn,False
+SingleLineJavadoc,False
+SingleSpaceSeparator,False
+StaticVariableName,False
+StringLiteralEquality,False
+SummaryJavadoc,False
+SuperClone,False
+SuperFinalize,False
+ThrowsCount,False
+TodoComment,False
+TrailingComment,False
+TypeName,False
+UncommentedMain,False
+UnnecessaryParentheses,False
+UnnecessarySemicolonInEnumeration,False
+UnnecessarySemicolonInTryWithResources,False
+UnusedImports,False
+UpperEll,False
+VariableDeclarationUsageDistance,False
+VisibilityModifier,False
+WhitespaceAfter,False
+WhitespaceAround,False
+WriteTag,False
+any-ANNOTATION CHECKS,False
+any-BLOCK CHECKS,False
+any-CLASS DESIGN CHECKS,False
+any-CODING CHECKS,False
+any-ILLEGAL CHECKS,False
+any-IMPORT CHECKS,False
+any-JAVADOC COMMENTS CHECKS,False
+any-METRICS CHECKS,False
+any-MISC CHECKS,False
+any-MODIFIER CHECKS,False
+any-NAMING CONVENTIONS CHECKS,False
+any-REGEXP CHECKS,False
+any-SIZE VIOLATION CHECKS,False
+any-UNNECESSARY CHECKS,False
+any-WHITESPACE CHECKS,False
+same_day_duration_avg,False
