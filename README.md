@@ -14,7 +14,18 @@ Please cite as
 ```
 
 See here the [linguistic commit classification](https://github.com/evidencebp/commit-classification)
-Research used the model of commit 650f91f
+
+Research used the model of commit 99b7bbe
 Repository will keep advancing.
 
 See here the [analysis utilities](https://github.com/evidencebp/analysis_utils) 
+
+Research used the model of commit 75b73e5
+Repository will keep advancing.
+
+
+See here the [general database construction](https://github.com/evidencebp/general) 
+
+Research used the model of commit d15d54e
+Repository will keep advancing.
+
