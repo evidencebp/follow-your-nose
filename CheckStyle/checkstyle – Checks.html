@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://checkstyle.sourceforge.io/checks.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Apache Maven Doxia Site Renderer 1.9.2">
+    <title>checkstyle – Checks</title>
+    <link rel="stylesheet" href="./checkstyle – Checks_files/maven-base.css">
+    <link rel="stylesheet" href="./checkstyle – Checks_files/maven-theme.css">
+    <link rel="stylesheet" href="./checkstyle – Checks_files/site.css">
+    <link rel="stylesheet" href="./checkstyle – Checks_files/print.css" media="print">
+<script async="" src="./checkstyle – Checks_files/analytics.js"></script><script src="./checkstyle – Checks_files/checkstyle.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./checkstyle – Checks_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./checkstyle – Checks_files/anchors.js"></script>
+        <script type="text/javascript" src="./checkstyle – Checks_files/google-analytics.js"></script>
+        <link rel="icon" href="https://checkstyle.sourceforge.io/images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="https://checkstyle.sourceforge.io/images/favicon.ico" type="image/ico">
+  <style>@font-face {
+	font-family: "wticons";
+	src: url("data:font/woff2;charset=utf-8;base64,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") format("woff2");
+}
+
+.wticons {
+	line-height: 1;
+}
+
+.wticons:before {
+	font-family: wticons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.wticon-account:before {
+	content: "\f101";
+}
+.wticon-add:before {
+	content: "\f102";
+}
+.wticon-casual:before {
+	content: "\f103";
+}
+.wticon-check:before {
+	content: "\f104";
+}
+.wticon-checkSmall:before {
+	content: "\f105";
+}
+.wticon-chevron:before {
+	content: "\f106";
+}
+.wticon-copy:before {
+	content: "\f107";
+}
+.wticon-copySmall:before {
+	content: "\f108";
+}
+.wticon-dismiss:before {
+	content: "\f109";
+}
+.wticon-error:before {
+	content: "\f10a";
+}
+.wticon-expand:before {
+	content: "\f10b";
+}
+.wticon-feedback:before {
+	content: "\f10c";
+}
+.wticon-find:before {
+	content: "\f10d";
+}
+.wticon-formal:before {
+	content: "\f10e";
+}
+.wticon-grayLogo:before {
+	content: "\f10f";
+}
+.wticon-info:before {
+	content: "\f110";
+}
+.wticon-leftChevron:before {
+	content: "\f111";
+}
+.wticon-logo:before {
+	content: "\f112";
+}
+.wticon-love:before {
+	content: "\f113";
+}
+.wticon-paste:before {
+	content: "\f114";
+}
+.wticon-pin:before {
+	content: "\f115";
+}
+.wticon-premium:before {
+	content: "\f116";
+}
+.wticon-premiumDetail:before {
+	content: "\f117";
+}
+.wticon-premiumFull:before {
+	content: "\f118";
+}
+.wticon-refine:before {
+	content: "\f119";
+}
+.wticon-rewrite:before {
+	content: "\f11a";
+}
+.wticon-rightChevron:before {
+	content: "\f11b";
+}
+.wticon-rocket:before {
+	content: "\f11c";
+}
+.wticon-sentenceExamples:before {
+	content: "\f11d";
+}
+.wticon-shorten:before {
+	content: "\f11e";
+}
+.wticon-unlock:before {
+	content: "\f11f";
+}
+.wticon-warn:before {
+	content: "\f120";
+}
+.wticon-x:before {
+	content: "\f121";
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc2hhcmVkL0ljb25zLmZvbnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxzQkFBc0I7Q0FDdEIsaXpPQUFpek87QUFDbHpPOztBQUVBO0NBQ0MsY0FBYztBQUNmOztBQUVBO0NBQ0MsK0JBQStCO0NBQy9CLGtCQUFrQjtDQUNsQiw4QkFBOEI7Q0FDOUIsbUJBQW1CO0FBQ3BCOztBQUVBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQjtBQUNBO0NBQ0MsZ0JBQWdCO0FBQ2pCO0FBQ0E7Q0FDQyxnQkFBZ0I7QUFDakI7QUFDQTtDQUNDLGdCQUFnQjtBQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xuXHRmb250LWZhbWlseTogXCJ3dGljb25zXCI7XG5cdHNyYzogdXJsKFwiZGF0YTpmb250L3dvZmYyO2NoYXJzZXQ9dXRmLTg7YmFzZTY0LGQwOUdNZ0FCQUFBQUFCVzBBQXNBQUFBQUxtd0FBQlZrQUFFQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFISVZjQmxZQWlYWUt2aHl5TlFFMkFpUURnaGdMZ1E0QUJDQUZoQW9IaERjYkx5ZFZSb1dOQXlEYmFPdVIvZjh4T1JreWhnbHMrbGRWTWlJajdSSWt4VlVobmVVWXBrTjhhclRIMGFkc2N0cTB0VHhhc09wVnNXcUs4TnkwOWJLTGgzV3VTRVBidlJqMnBVYzdpZnd3ZlA0c3lDWkRLZUdoWDB2ZkxoOEdnQTl3TDhsZUVIRjhnVlNGcXFxUW5jcE9GUnBaKzExZGgyaWJCNitnekNGdEZFalpHQTBXUGJFZnpNQ3RiY3pBNkJWdTdjcGN0SzdUVmJ0b0Y3cEllSGorOEhmdXZhKzVySTNSc0xVcG1yNldRRWdCSlJ4bnBkK2lDZ0FGMk5tU2ZDTC9nd0htemFrdnRTelpSVU1KUmdpQ0VRUTJQbEl1OWo5Szc5L2NsQ2hBQTJiSFRqUXo4ZTcvWDVHK09iWE9CYUFCU1hvdExQMHgwZVNPTFR0REhpY3JTUU1BK3doQTJHWTdybE5LeUNmQnE0cVorNy85K3RWOS96dXFFUzQ2QWMvaVViUlJDdWZNemk2SE4yL215M3pmZlpndGk3Mi8yTzZpcG0wVk1VdGlIZ3FSUTZWU3lZVElvVFZDb21ZSWlkRFFyYWE3WndTM2VScUlmWUlzeHJTY3hYTDFYOU5JSjRpRUdNUnloalBrU3owVEpPQVUwVW8rUEI2ZUJ2dDZkWDJLS1ZVK3RZUmQxOUxyMDk0R2Vsa3NWWkZPWWw3RXZEWmJxVmFmdi80SlUycU81UmhPUFl0elBKV1FkTmxrQm45UmVFQlFTSmdpUlU1ZTUxV3BVYjlvNmRDYzRpeCtDZlVhK01TaUxiczVCQ1ExaWFxRG9iWDdScmFBRUkzT0p5cW9hcXpUNm1qb3BCcmFTMVExZEtHTUJlUkVjUFl3Tkl0cVdMS29xN2ExcXFTeW5DUWsrWGZmdzVaUGc2UVlTMVMxOVlZQnR0cWlNSldtYjVyTnhkSWlyTU01bHV1Q3RVMUEza1p0Wk5taG1Xbit1anBKUHRzSUw0MnQvM0hiVkU2VkxKM28zSnExaWRlcExXZXdkSU0xTzZHVzBXMzMzQ3pFVWtudjV1RmF3alJ1dGRwRlNHVEp3MloxMlJyVW9GTzVkWjltTWFWY2N0b0ZHbU5URnpGa2FnRnR3SWxOdFpCaXo3dEVsVVVWMGlJd0lEUWZ0bWxNRnN2Ym1NOFZsdUZVaEQyYWFqclZrRVV5ZjVsTU5wOG03Y05GSktaYWFzcnMrcG1uQm10UVJIUXN6c3lXMUt4Rm0yNkkvQllmYVBBMCtTdDR3OSs5OUdVbFpKQnBSWDRjNC9jOTJ4eHowRm1vdjdCWWIzM2ZONEFHRkJDWUZ2SFNuMVQ5UjlUR0dxQnd2bW1iSDVCYUhLNENlb1dBelpPanBMUHdqeTZoNERRTDVIV2lMK1NTcE1wbTFVUGxIanJ3aVFnRThreXRyZndpNDB0OHdibFpRa3lEa0ljemV5UnNneHAxcy9YMzlBclZ2Y0hrNU9MaGxZS0xsUzVEcGl6WmN1VEpWNmhJc1JKbHlsV29WS1ZhalZvc2RxUnVjbThkK3oxZEFLQmRWRWs5TzkrMnZiTzdYNEJiUjVxdWVqazV0T0lYWUlYajZDMGNYb0M2ZEFQa1gyS3Q0MmVjUXdkQWQ1MmRBRDNCdmRBRk1JeTlJV0FLVUE4MndBYzJvUlZzZ1I5c1F3VHNnQVYyb1FYc1FSdlloemc0Z0dad0JBbHdEREZ3QWczZ0ZFTGdEQUxnSEpMZ0VteHdCVkZ3RFdGd0EwRndDNDNnRHJvQjdxRU9QT1J1Z29BQzV5UUFCUUpRSVJCMENBYkJnR0FSVEFnT3dRbkJJN2dnQkFRUGhJamdoWkFRVWlCa2hEUUlCU0VkUWtYSWdOQVFNaUYwaEN3SUF5RWJ3a1RJZ2JBUThpQnNoSHdJUjFBSTdrSlFCTzVCVUF6dVExQUNIa0JRQmg1Q1VBNGVRVkFCSGtOUUNaNUFVQVdlUWxBTm5rRlFBNTVEVUF0ZXdEQW1SdS9kTGJ5Qlo4RHhqZnRUbmtrNndaUkNVb01sb3lCSlZBYlYzbFNaVjJXVVVwTVJHQm1SVENuUmRvTWpOMmROejU0bEc4eWEwOUVkYzZwVEEwZHFvMDdkV1UzTm1qSG53V085VG9lemRNcVNXcWNnODAyaFdsTmViYWlLV1Y5ZnFwYzJMVEZmRkZGM0xXME5GYTJhVnJRank3bWxzbWs1MGhCdEZwR1F1eEtNYTFGdFkyTlRXNXRKR3lVaWlJdDBGczJuazl4UFp6UHYvN1dqbVdWUEZ6Mzh1T0Qra3NkVGJuclE1dTkyKzVMK1dKc0hsbnZLdnZkTC9uaGp2ZjR1ZnQ0MVpDVFlSMk1JTFlJbkxQcG1weno4MS9xdjEyOTNlWUo4WCtOR1RqRWJoakpJeERTbkIwRDNuNE8wN256QjFkTDNvZTBSZ2pqVEp5NE5vSXRWSWdwaGRVNjdrekRiUThQN1VyY0NYWFYrQ2lWVHVaZUlJbjZESWx5czB2Vk9yRDlZbGY5Z3NmMzNqRnFzbE9ndkdvTUxRV3FuTDFBWFhzRkMrMlZBTFRSZDJVZXV0aWF5bDlQOTdIUS85TkUzQ3YrcW53OXhzZy82NkpjbUVURXBTdGRqNHlhdkVIL3RmMWhsZmNQeDFxY1BlakRneEdwS2trTGg3bnNITDBaSHBwQksrY2Y2alJRYXgyU2E4UHdzV3VGK2ZPTnAwZ0dGSk0xMjVmalRJSzBVazFrN0kxSldHak1yOVRCaloyV2FISzhod3Q1eEg3YU1nY1FqbHY1dW1wYlR1KzNyZHNzVmVVS3hvQWl0SzhvcDBmU2R1c21wYnU0Mkp6R09JWU9JY0FRWUFuTWlpQTI5OVJBUzd1c21nc1QzMXdEVUFnVWdxQURyelkveEZiL2VOZEQwOXVlbFZNSW5mS0ZjY2JTZUpwZjIxdmMzRHZ1dC9VTkdOR29Zam5ONm9HNmd5U1dSajFQWG8rV21KS1VteEhnd2t3d2phaVFhREMyMVpJS2pPYkZFSW5Qa3BxK2hyN0cva3pkQys4eG9vVzNxTUZlcEdkQnhqS2paUDN3clpCTXB1dldkZE9tOTlhQ09ETlJaZXEvZUZlMGF5K1hKNmFZeDFETGt0dzdQN2plN0tTS3VwODhFZUhPaHhZQTdRenZFSXFVaU9YM3B0ZkVlOXhrY2F2akpQTlIzeW4reDhuOS9rZUcwTzJIYjEvQUJkR2lXRGg4OGZHVzRQZitlTC9OejcxaHpicnZDbS9jV3F2WmY4ZHY2ay84WEpna2tadVFBVklqQnZlVlplUm9YSVpoYWNoL3BLSGROM0dLNThNbFVZdC85S2o3Zm5pYU84dHU5MHdBVm9NSmIwQTBHS2k1QWNHREo0NnFVNysvRW1wckdjbm9XWGdZSTJ0TStaWEZUVXBjOW1QN3AyY2xKTFBNWGxjRWZXSDZiVG5OdWRlNDFTanZ6RG5oalF6OHJEcjhwQ0F3M01QRmpPUTROVzBDSHd5d1E1T2MveG1yczl4dExpUVdBS1dJeEVldGFhVjhjR1kyRFVMbjNqN2dYbDhjcEFmN1BpWUJkdXVEaU43RHV6RXl2VE8vVnpYL1RYMDIvZFEvYWY1SDRQR1hHck14WFl2cytsbCttWnI5aG1jOERhMFp1QlF0SjdkbXo3KyswbDdQR3VNa01HOUkxN0lRQ3o3Q0xXRGt0SmlaRkQ1cStraTlPK0tzQUxlc0pxd3lKREN3T1RDYTA4R2JlQ1RwS1dOUUI1OFRwMGlsdHVvWHo3dWdwTVZTa2tQRGZ5Q0VFTUFNcWhBcFFtWnlNQVlJNGJvVmU2WDV5eTNXRjU4SHV5U2RFK2NEVXZ5OVNsRkR2aXVTdVRTT1AwOTBCeTEzZ2tocVBQZlNnL2U2WFlNNU51WEZubmROdnpkeDhqeG5NSjN3MjBsMkYxYWVRUWxVaWM1ejNQOE9WOG9sTzArNlVRTXFkRnNxTVJScGZHcTNVdzBhWTZZWjVyZFR0S0FSdm5Oc2x6YzdkbjlQTE1Kd2RuOGFpQ1ZRaDdtdWtwNzYzWGcrbTVmRUN6azdUS3pWbmpta0gwaWZOd3pUTW1IQ2dWTnhQcHhJdW5qQXJDWjlaaUFRRDlMeFk4bmhGYW9aUC9mVUhuMDEvTmZzVy9DN05rL01KSDFVSjlaK3MwRzRnNHB1VmZqQ1VnT2hoMnZNbHFRbjkwMit0bmxiRkZCRXVNK1czNW5kT1RtL2NmTFg2My9xd080T2VWM25hTVJKd0pqakNTR1Flc29GS1NPWEZ1S2J3N1BqWXk0L3Z0VUN3YTJJWGxwTzdKeWZIeHlheFN2a1AyamUvWGtId3NkVVdDUmZnVzAwTElKRUMrUkJkZjFWbVlhR2RDWmxiUGdJeE9BUXdqUHhBNGRvL3A5NklTb25raERrNmhuRWlqd2pYc3NNY0l6bEhoQU92UWkyNEVmaFR1U1A3WitDTkJmMFdDazRJTXpCOEpwQzVFZ2N4czVzWkdNS3hVT1EvcFAydytOVm9BWHI1US84QUYrMVFNOXJXSnFaeCtJNitEYjN5NEJ0b0VIRENDMHBNcEFLd1p1bEd3c1pwbHE2WWRTN3Bmb1ErMDNMU24rb3VMWlZJU3FWeDZhM256TWZHS2g4OE9CdCt5Zk01QnFxcUduYlhWZWxHUEpEQ2JzWW5VaHMxUEh6d3padnBhUTBvaW05cit6USszdFA3SDlRVlQyVm1jYXFwK3ZydEFkaERSMmJvd0ZvaWw4eVVSMTIwQm5SSmhGdGZQQ0VKSFh6b3V5aTVDTmo1SHNuR2VKT1Z2cHJrR044Z1k3enhTaE1qWE5iNHlzWk9CR21DbEhZZmJ6WTllZkwwaVFwaFQxVjRiK1NtcDAvQjlMS2VOM05IeFppWUNYR3ZIOHlTYTk2RzVEM3gycDI3dEovQTJQWEJHcnQxZDU5Mzd2eHNiNlk5aEVMSDFRL3pESm1iNHNmdEQybG5CalpzQUk5MHNtdWlxdTFYditHR2pZYkEzTjN5U2FxemhkcEMyTnI2YmlYbmhadUEvV2RGb21WWUlmWmRwSE5vbTlKREdtUVhoUTRSODUySVE2bGo3T2FEMTRPSS9FS3doMGpBLzJubTJQaEJJNzZKV0ZySXpmTEpTUE5SOGo1bGNkTzl2ZE45czRvTGNhSSs2V20rU3E0cVJPMVVNVFptelNJOHN2Tk11eFZuTDdPVFN1MWs5cnVFYTlsMlVudlpMdUdDTkdlVk15T1hSQ3ZxbzZPRGwwUVVaU25LRkpUSWVYVU1GSm9nUUtQSzdYV1h4U3pQSGFQUjdVRGtldjZFUVdYMlZTR2RmWTU5b3E5bWowTTV3VGpKWTJUdXlMd1g4em41OVRzRzd5UmpDNk5EbTkrcTJseHNIdTQ0TGc4N085Y0I2R3hycVhwZllDZ3hFSWt6OWc1Y0l3YlRDQWduWXk3RERaZVIyb0ZFMDJVWU9VbDY0YmhzMjlKT1NmdjFqempUMEt5dGRTZE9ubDdtOFBVbStPL3F2U2R2WSthT0ZmRENPSWNJRTBqWElrSS94QXhOOUdVS1VaR1JHZnNmRFY1RkxRZkVWRm9VSmZPNjhPcXpQd1ZuWGg3THljdVhyMXlVcjQvUjFZc09uVTB5SlBDTTRncHJVU2F1VndlR2dyK1ZaaVBrNm1IQ3ZzZDl5Kzk5cWJGZW1pVlhlTXdMOVRWek15WlNQQTZ1b01raTIrYXZIdHJDajlxWjJwVzcrMjdsNHBHTzh1NzNoRkJhTTJZdGdwQzhYMGdTazJYcWZFRU9uNThqeU1jSkYrNUcrUUtjY0JMcUpLckNDdTRWQTNCS3RhMVp0azBaVFlTSnlyNXROZUYvNEpjelZjaVRtZnpwNjd4S0NuazJYVGY5bEhmSjAzWU5Db3B3ZVJML0tXMHFEanpSUmtQT0ZTcG42SEpzajJxZ0tBRnA5eHB1ZktEcVVubUVWUWV3dkZLOGR0eXN2N2tqeGRPTDdaOFRCcTJqVGpyNE9FNzQzWER5ZGJ4eC8ydFNmSWdxSkN3cGJKVnExVmp4UUxGbzd6STNabFQwUEpENlZ2V2MwNUpOWXkxNzYxNUYzUXRyVnU1azZTK1BKNm9CbGJRbHcrV0Eya2puU3g2MUtxQmVZMGNkOHhTSzdtUTVlZ2NwdlgyejZxYXY1MW1hNlhGMUlnQ240akFXaHZlZlVnTXJRWkNjNEtLazZSay9rLzQ1N2g1OG5xYW5sYVlVSHlmT0p3RzgzMTVTZVQ4Znl6Y1F1RWVkV25tRklPYmdnUk1xaEU3SFpVU29rV1Q4SEV3RVVYamdXTWl5dWlyaHdtdVBEUFZEUk12emR1MCsxV0EvT1lMNDJHN2N6NFJOMVVFTHBMeEFZNFNPZVRJbUdnSytaRUZFNU43OWx3WkhkUW9SeURSUEtUVGpLbi8wMmJ1Q2ZUZDFhVHR1V3BTdWg0SFFjUEFzRWhiQlk4M0p0Qk13eGg5Ujkvbk9xS0dJeUVZTmZ0UGo1c2E3azlYV0JabHlvVjFHbnErcHF4R0I3TDUxcVpVMG9IVis2NnJOcnVrYklyclNkcDFibkxpNnZiejZIR0dPVlozK2NpUXVxU0dJeUNkS2F4WUhMdkQzWHhDNEdDbGN1Sk1XQjBKZzg0Vy8xbXBBckZXa1pWZ1ZIeUJBcHkvNHp5Qm55c2xpY0dmSGdZZXZMbHg0OVhEYjJwMTlGazVUVHFZb2FPZHhDSFg5Z3BzekxIZDJvOTdxcmJ0RmM0T2RYeTdkSExrbzR4TWZQdnljK0djbTdiSkJYVFlhem1Nbml6N3pka0VldjlaN3lwclpPN3B4ekZ3Q1UySSt5ZnIzTHJldzM5YlBTV2dGYkMwcy9TZXN2S3dtL0N4WFRncjM0dFVFTDRJYXZ6TzZ2WmFLUnZoV0UvNldiNDFXWTF6WGtuZWdqSS9XcHJyYUJqWml2TnRJWFRwV0ErMWxiajdNbWtTMHhWd2tXZ2RiRVJLQTE2V0dvNmlKQkpRT1lURWNTV05GUmZkNzlkOWQyRy9ZRC9RbndMQkpZUnBHNS9SejZHRU42RzdxQ2pmRDF6ZWoySEVwaFJzekQvQ3lBd3N2SjhYbXRrZXdZWnZrSlVtZUNSN3VDWjdKRHhkZXVQSHNaRWt5YkJQQi9qcHdVdXhibGpKTXlRSXdYY1Nja05HZGVPSjdSbVBlK1ZUaGt1K055K3BFbDAwRVQ4cm9Kbjc0ejVUcDRwRmc3eTliUndzM3BYTW5neWU1ZExNdzJqcC9XWUs5aDR1QytibmF6NFF1bXd5eWZwandLZ0hmU09pT093emdCTFY3ZHZESnZxU2dvL1VqUGxDZ2N2VW10UVNzM0xSR0dlNEpQTXZRYkJWVURSRzZzdWJRS003ejBQYnpvUnpJcEdweEVvSDFlMEdNcnJrQ2lZSm1aMHZkOERwVW1hNmxMTmhlZkh4OEdCOVBFdDNydFVFNEkvV0VDQUFoaVVFSUNIR0lDeUJ3c2dYc08ySXRvV3k5UC9vZmI0TTNITzEvOXUyUG5CODgvY1JCaFg5NFhjQ0ZhL0lsNm91NDVZMTJGUDdGeHVteEhXNXFNc055SHVEakgza2gwTzZZVjI4VnlXQTRlaFBHWTYyT2dhN0pFZlhvdWRKdG4rWFR4dWdpVTdjdU5jKzIyTjhWYUp0aW5Xb2RRbGQyZDNJc1FEc3N1RFRWT1VrMHRrc0xBZ2YvWk9PTTJYYTNWOHI5OVI1Vkp6eGs0ZER1ZW0vZVpLYUE2ZWxRR1VOUEM1djNBRWhld3V6ZWlCOURDRnpGYk9OQVNkczkzQkRlM3BoVi81TXRjUlc0cW5ING9sUWYySmtiN1RiSEdGYXBZc3lrcmdxdWM2UlhjaUdTZ0Y5M3gwanJXRHd5bE5jN0lpRytqZERXbUUrUXk2K2xVUXlFU211QnNaM1loZytGQStKdWpaK1N5MVg2aVVKeTdwRVRzUVg2c0hsODZGTDR3TXZEY2NHOFRMTWtTMlc1SDArWnhZMnRFdkJXd3VqOE1tejdOcExlUE1saTkxeWxrZ3Y4cm1zL3hoOHpOanJzSWsxOWg1Vk51NlNScDhRODB0aVphcE9PazVEdnFwcVkybW5IL3ptT1Q1RjJVUXdwbStLL3M3b1FFMzluMlE3WW1mMWJCcnJEVFJNWjNOME1iMW1ncHdmMXVPQVJMZkVqWllxQ0pvZk1lNkxKYU44QnNCSXN5MDMxVHZiMFRQWk9uUlF1M0hnT2UvSjVwMzA1c0J5RzEvMlcvd2JSMmtlRGIvSytGNzJCS3UwUFhnUE1zeFpDVWJ3RXJSYTBIZEJiZzB3dGhneVFBWU04V2x2c1FKYnFQZHBBY3hVRzhxRG1PVldJQllmcm5xdjNDL1NjY2xZVVJNM3dENXFjcTkwcnZLWGJMTW5RUGhkYTFVSG9HUm1nZGlPL296Sno2SFNPMWdDMSt1Z2Fnd2Ewb2cyNFBsZGJDbTFCODl3SFBUZzA2MEhuNjh3Wk05QSttVWFEekx3VDBsQ08zb1hRM1J4NXR0QTV1cGJCd0dWanIvZi9FY2NHTHFOWFlWSU1lZC9LWmtGdkFJaDQvZWN2cTRuWVR6a3BvTDFFWHN3QmdNNWJackpXQzAzd041Q0E0ekdiNlR6akRtMjgyaXd1WTBGMjljRUhFTmZYQmdMUldGQytXdW5EcEhrZDBFWUVuQXFQYlJLQXJvY0F0RU5hdWdUSmNpb1NkWEZRakhvYTlaZjV6b2I0dHZkOTVjNFM2STFlWGxoazRDd2F3MzgwVFBWOUtCdEtERzNHLzZSRUdEdEpDZlpLYW5BV2FGd0tRV2VvQVNlLzBONWRNaXlBU00yQnhPczRrdVRnUjBrSmZpR3B3UjlCayswVDZMeStnTk1kN1A5bzhLUW83cmxTd2FjdnNDMUt5dXF0L1AwQnBTcDRjWEZ5Rm03RUMzZ2d5YUJGTVlqVTJTdXpFWWFDRTgvQk15QUdFU25Vb0Rndm1lUHR6RkhLUHJsY0JUZnF1VkxCcHkrd0xVcVM5K05BK3dlVUdFbFY0ZklmSGYxUVN5L002K1F2R2JTcEdKYjJxYk5YWEppTW1EdFRjTUt6R2RHa3lHaDRZMUZ1cVVFeE5WY2FXT0xOdVJpVzBXVzU1UWczelJqUDZHKysrMk94SVlNQ0RRWXNPUEFRL2xiMDRzdFFvRUtEYnBpVzdiaWVINFJSbktSWlhwUlYzYlJkUDR6VHZLemJmamllenBmcjdmNTR2dDZmNysvZjBkblYzZFBiWjlUcWlhMUM2M25OOTVDaDVORUxGYW1WdUlxZE00eTZvSnBOclBsMkVuRzViZDlSOEd2bWtLRlZ4Mkc5TUpSR2JUZWRaamhkeVdsUGFRNURnUmJ3by9SNnRUcW9ERzhTZENGVk16UGw5Y0kwR1J6UnlvNGNQb01OcytxWnNNVTAvR0JGekZDaUxCWjZlOTZ3TzVqSFNBekxwZDV4djdIOE1nNjRxblY3M3VVanNLeHdlN0RrYzR1NFR5MFpsdks2TG1CSjJWUEZzRHNKdHJ5V3l3VzFhb0JQMDdOMnB1RHBMbDFFU010MEF3bE5GKzFENWJXWjlVRitmQ2NwUWN0aldvSktvUEhONlpCb1VERUsxdWRIa1B4Wjcya0JcIikgZm9ybWF0KFwid29mZjJcIik7XG59XG5cbi53dGljb25zIHtcblx0bGluZS1oZWlnaHQ6IDE7XG59XG5cbi53dGljb25zOmJlZm9yZSB7XG5cdGZvbnQtZmFtaWx5OiB3dGljb25zICFpbXBvcnRhbnQ7XG5cdGZvbnQtc3R5bGU6IG5vcm1hbDtcblx0Zm9udC13ZWlnaHQ6IG5vcm1hbCAhaW1wb3J0YW50O1xuXHR2ZXJ0aWNhbC1hbGlnbjogdG9wO1xufVxuXG4ud3RpY29uLWFjY291bnQ6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDFcIjtcbn1cbi53dGljb24tYWRkOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTAyXCI7XG59XG4ud3RpY29uLWNhc3VhbDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwM1wiO1xufVxuLnd0aWNvbi1jaGVjazpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwNFwiO1xufVxuLnd0aWNvbi1jaGVja1NtYWxsOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTA1XCI7XG59XG4ud3RpY29uLWNoZXZyb246YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDZcIjtcbn1cbi53dGljb24tY29weTpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwN1wiO1xufVxuLnd0aWNvbi1jb3B5U21hbGw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMDhcIjtcbn1cbi53dGljb24tZGlzbWlzczpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwOVwiO1xufVxuLnd0aWNvbi1lcnJvcjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwYVwiO1xufVxuLnd0aWNvbi1leHBhbmQ6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGJcIjtcbn1cbi53dGljb24tZmVlZGJhY2s6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGNcIjtcbn1cbi53dGljb24tZmluZDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEwZFwiO1xufVxuLnd0aWNvbi1mb3JtYWw6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGVcIjtcbn1cbi53dGljb24tZ3JheUxvZ286YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMGZcIjtcbn1cbi53dGljb24taW5mbzpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExMFwiO1xufVxuLnd0aWNvbi1sZWZ0Q2hldnJvbjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExMVwiO1xufVxuLnd0aWNvbi1sb2dvOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTEyXCI7XG59XG4ud3RpY29uLWxvdmU6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTNcIjtcbn1cbi53dGljb24tcGFzdGU6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTRcIjtcbn1cbi53dGljb24tcGluOmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTE1XCI7XG59XG4ud3RpY29uLXByZW1pdW06YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTZcIjtcbn1cbi53dGljb24tcHJlbWl1bURldGFpbDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExN1wiO1xufVxuLnd0aWNvbi1wcmVtaXVtRnVsbDpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExOFwiO1xufVxuLnd0aWNvbi1yZWZpbmU6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMTlcIjtcbn1cbi53dGljb24tcmV3cml0ZTpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExYVwiO1xufVxuLnd0aWNvbi1yaWdodENoZXZyb246YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMWJcIjtcbn1cbi53dGljb24tcm9ja2V0OmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTFjXCI7XG59XG4ud3RpY29uLXNlbnRlbmNlRXhhbXBsZXM6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMWRcIjtcbn1cbi53dGljb24tc2hvcnRlbjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjExZVwiO1xufVxuLnd0aWNvbi11bmxvY2s6YmVmb3JlIHtcblx0Y29udGVudDogXCJcXGYxMWZcIjtcbn1cbi53dGljb24td2FybjpiZWZvcmUge1xuXHRjb250ZW50OiBcIlxcZjEyMFwiO1xufVxuLnd0aWNvbi14OmJlZm9yZSB7XG5cdGNvbnRlbnQ6IFwiXFxmMTIxXCI7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body class="composite">
+    <div id="banner">
+<a href="https://checkstyle.sourceforge.io/" id="bannerLeft" title="Checkstyle"><img src="./checkstyle – Checks_files/header-checkstyle-logo.png" alt="Checkstyle"></a><a href="https://checkstyle.sourceforge.io/" id="bannerRight" title="Checkstyle"><img src="./checkstyle – Checks_files/header-right-ruller.png" alt="Checkstyle"></a>      <div class="clear">
+        <hr>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+      <div class="xright"><a href="https://checkstyle.sourceforge.io/checks.html" title="toTop" style="display: none;">To Top</a>        &nbsp;| <span id="publishDate">Last Published: 2021-02-28</span>
+        &nbsp;| <span id="projectVersion">Version: 8.41</span>
+      </div>
+      <div class="clear">
+        <hr>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+       <h5>About</h5>
+    <ul>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/index.html" title="Checkstyle">Checkstyle</a></li>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/releasenotes.html" title="Release Notes">Release Notes</a></li>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/consulting.html" title="Consulting">Consulting</a></li>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/sponsoring.html" title="Sponsoring">Sponsoring</a></li>
+    </ul>
+       <h5>Documentation</h5>
+    <ul>
+     <li class="expanded"><a href="https://checkstyle.sourceforge.io/config.html" title="Configuration">Configuration</a>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/property_types.html" title="Property Types">Property Types</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_filters.html" title="Filters">Filters</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_filefilters.html" title="File Filters">File Filters</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_system_properties.html" title="System Properties">System Properties</a></li>
+      </ul></li>
+     <li class="expanded"><a href="https://checkstyle.sourceforge.io/running.html" title="Running">Running</a>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/anttask.html" title="Ant Task">Ant Task</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/cmdline.html" title="Command Line">Command Line</a></li>
+      </ul></li>
+     <li class="expanded"><strong>Checks</strong>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_annotation.html" title="Annotations">Annotations</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_blocks.html" title="Block Checks">Block Checks</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_design.html" title="Class Design">Class Design</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_coding.html" title="Coding">Coding</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_header.html" title="Headers">Headers</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_imports.html" title="Imports">Imports</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_javadoc.html" title="Javadoc Comments">Javadoc Comments</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_metrics.html" title="Metrics">Metrics</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_misc.html" title="Miscellaneous">Miscellaneous</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_modifier.html" title="Modifiers">Modifiers</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_naming.html" title="Naming Conventions">Naming Conventions</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_regexp.html" title="Regexp">Regexp</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_sizes.html" title="Size Violations">Size Violations</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/config_whitespace.html" title="Whitespace">Whitespace</a></li>
+      </ul></li>
+     <li class="expanded"><a href="https://checkstyle.sourceforge.io/style_configs.html" title="Style Configurations">Style Configurations</a>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/google_style.html" title="Google&#39;s Style">Google's Style</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/sun_style.html" title="Sun&#39;s Style">Sun's Style</a></li>
+      </ul></li>
+    </ul>
+       <h5>Developers</h5>
+    <ul>
+     <li class="expanded"><a href="https://checkstyle.sourceforge.io/extending.html" title="Extending Checkstyle">Extending Checkstyle</a>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/writingchecks.html" title="Writing Checks">Writing Checks</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/writingjavadocchecks.html" title="Writing Javadoc Checks">Writing Javadoc Checks</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/writingfilters.html" title="Writing Filters">Writing Filters</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/writingfilefilters.html" title="Writing File Filters">Writing File Filters</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/writinglisteners.html" title="Writing Listeners">Writing Listeners</a></li>
+      </ul></li>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/contributing.html" title="Contributing">Contributing</a></li>
+     <li class="expanded"><a href="https://checkstyle.sourceforge.io/beginning_development.html" title="Beginning Development">Beginning Development</a>
+      <ul>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/eclipse.html" title="Eclipse IDE">Eclipse IDE</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/netbeans.html" title="NetBeans IDE">NetBeans IDE</a></li>
+       <li class="none"><a href="https://checkstyle.sourceforge.io/idea.html" title="IntelliJ IDE">IntelliJ IDE</a></li>
+      </ul></li>
+     <li class="none"><a href="https://checkstyle.sourceforge.io/apidocs/index.html" title="Javadoc">Javadoc</a></li>
+    </ul>
+       <h5>Project Documentation</h5>
+    <ul>
+     <li class="collapsed"><a href="https://checkstyle.sourceforge.io/project-info.html" title="Project Information">Project Information</a></li>
+     <li class="collapsed"><a href="https://checkstyle.sourceforge.io/project-reports.html" title="Project Reports">Project Reports</a></li>
+    </ul>
+      <a href="https://github.com/checkstyle/checkstyle" title="GitHub" class="poweredBy">
+        <img class="poweredBy" alt="GitHub" src="./checkstyle – Checks_files/github_logo_social_coding_outlined.png">
+      </a>
+      <a href="https://twitter.com/checkstyle_java/" title="Twitter" class="poweredBy">
+        <img class="poweredBy" alt="Twitter" src="./checkstyle – Checks_files/twitter_button.png">
+      </a>
+      <a href="https://stackoverflow.com/questions/tagged/checkstyle" title="Stackoverflow" class="poweredBy">
+        <img class="poweredBy" alt="Stackoverflow" src="./checkstyle – Checks_files/stackoverflow.jpeg">
+      </a>
+      <a href="https://groups.google.com/forum/#!forum/checkstyle" title="GoogleGroups" class="poweredBy">
+        <img class="poweredBy" alt="GoogleGroups" src="./checkstyle – Checks_files/groups.png">
+      </a>
+      <a href="https://www.ej-technologies.com/products/jprofiler/overview.html" title="JProfiler" class="poweredBy">
+        <img class="poweredBy" alt="JProfiler" src="./checkstyle – Checks_files/jprofiler_medium.png">
+      </a>
+      </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+
+
+  
+    <section>
+<h2><a name="Standard_Checks"></a>Standard Checks<div class="anchor"><a href="https://checkstyle.sourceforge.io/checks.html#Standard_Checks"><img src="./checkstyle – Checks_files/anchor.png"></a></div></h2>
+      
+<p>
+        The Standard Checkstyle Checks are applicable to general Java coding style
+        and require no external libraries. The standard checks are included in
+        the base distribution.
+      </p>
+
+      
+<p>
+        The site navigation menu lets you browse the individual checks by functionality.
+      </p>
+
+      
+<p>
+        Checkstyle provides many checks that you can apply to your
+        source code. Below is an alphabetical reference, the site
+        navigation menu provides a reference organized by functionality.
+      </p>
+      
+<div class="wrapper">
+        
+<table border="0" class="bodyTable">
+          
+<tbody><tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#AbbreviationAsWordInName">
+              AbbreviationAsWordInName</a></td>
+            
+<td>Validates abbreviations (consecutive capital letters)
+             length in identifier name, it also allows to enforce camel case naming.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#AbstractClassName">AbstractClassName</a></td>
+            
+<td>
+              Ensures that the names of abstract classes conforming to some regular expression and
+              check that <code>abstract</code> modifier exists.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#AnnotationLocation">AnnotationLocation</a></td>
+            
+<td>Checks location of annotation on language elements.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#AnnotationOnSameLine">AnnotationOnSameLine</a></td>
+            
+<td>Checks that annotations are located on the same line with their targets.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#AnnotationUseStyle">AnnotationUseStyle</a></td>
+            
+<td>Checks the style of elements in annotations.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#AnonInnerLength">AnonInnerLength</a></td>
+            
+<td>Checks for long anonymous inner classes.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#ArrayTrailingComma">ArrayTrailingComma</a></td>
+            
+<td>Checks that array initialization contains a trailing comma.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#ArrayTypeStyle">ArrayTypeStyle</a></td>
+            
+<td>Checks the style of array type definitions.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#AtclauseOrder">AtclauseOrder</a></td>
+            
+<td>Checks the order of javadoc block-tags or javadoc tags.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#AvoidDoubleBraceInitialization">
+              AvoidDoubleBraceInitialization</a></td>
+            
+<td>Detects double brace initialization.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#AvoidEscapedUnicodeCharacters">
+              AvoidEscapedUnicodeCharacters</a></td>
+            
+<td>Restricts using Unicode escapes (such as \u221e).</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#AvoidInlineConditionals">
+              AvoidInlineConditionals</a></td>
+            
+<td>Detects inline conditionals.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#AvoidNestedBlocks">AvoidNestedBlocks</a></td>
+            
+<td>Finds nested blocks (blocks that are used freely in the code).</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#AvoidNoArgumentSuperConstructorCall">
+              AvoidNoArgumentSuperConstructorCall</a></td>
+            
+<td>Checks if call to superclass constructor without arguments is present.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#AvoidStarImport">AvoidStarImport</a></td>
+            
+<td>Checks that there are no import statements that use the * notation.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#AvoidStaticImport">AvoidStaticImport</a></td>
+            
+<td>Checks that there are no static import statements.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#BooleanExpressionComplexity">
+              BooleanExpressionComplexity</a></td>
+            
+<td>
+              Restricts the number of boolean operators (&amp;&amp;, ||, &amp;, | and ^)
+              in an expression.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#CatchParameterName">CatchParameterName</a></td>
+            
+<td>Checks that <code>catch</code> parameter names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#ClassDataAbstractionCoupling">
+              ClassDataAbstractionCoupling</a></td>
+            
+<td>Measures the number of instantiations of other classes within the given class
+              or record.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#ClassFanOutComplexity">ClassFanOutComplexity</a></td>
+            
+<td>Checks the number of other types a given class/record/interface/enum/annotation
+              relies on.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_modifier.html#ClassMemberImpliedModifier">
+              ClassMemberImpliedModifier</a></td>
+            
+<td>Checks for implicit modifiers on nested types in classes and records.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#ClassTypeParameterName">ClassTypeParameterName</a></td>
+            
+<td>
+              Checks that class type parameter names conform to a specified pattern.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#CommentsIndentation">CommentsIndentation</a></td>
+            
+<td>Controls the indentation between comments and surrounding code.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#ConstantName">ConstantName</a></td>
+            
+<td>Checks that constant names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#CovariantEquals">CovariantEquals</a></td>
+            
+<td>
+              Checks that classes and records which define a covariant <code>equals()</code>
+              method also override method <code>equals(Object)</code>.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#CustomImportOrder">CustomImportOrder</a></td>
+            
+<td>
+              Checks that the groups of import declarations appear in the order specified
+              by the user.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#CyclomaticComplexity">CyclomaticComplexity</a></td>
+            
+<td>Checks cyclomatic complexity against a specified limit.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#DeclarationOrder">DeclarationOrder</a></td>
+            
+<td>
+              Checks that the parts of a class, record, or interface declaration
+              appear in the order suggested by the <a href="https://checkstyle.sourceforge.io/styleguides/sun-code-conventions-19990420/CodeConventions.doc2.html#a1852">Code Conventions for the Java Programming Language</a>.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#DefaultComesLast">DefaultComesLast</a></td>
+            
+<td>
+              Check that the <code>default</code> is after all the
+              <code>case</code>s in a <code>switch</code> statement.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#DescendantToken">DescendantToken</a></td>
+            
+<td>Checks for restricted tokens beneath other tokens.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#DesignForExtension">DesignForExtension</a></td>
+            
+<td>Checks that classes are designed for extension (subclass creation).</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#EmptyBlock">EmptyBlock</a></td>
+            
+<td>Checks for empty blocks.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#EmptyCatchBlock">EmptyCatchBlock</a></td>
+            
+<td>Checks for empty catch blocks.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#EmptyForInitializerPad">
+              EmptyForInitializerPad</a></td>
+            
+<td>
+              Checks the padding of an empty for initializer; that is whether
+              a white space is required at an empty for initializer, or such white
+              space is forbidden.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#EmptyForIteratorPad">EmptyForIteratorPad</a></td>
+            
+<td>
+              Checks the padding of an empty for iterator; that is whether a white
+              space is required at an empty for iterator, or such white space is
+              forbidden.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#EmptyLineSeparator">EmptyLineSeparator</a></td>
+            
+<td>
+              Checks for empty line separators after header, package,
+              all import declarations, fields, constructors, methods, nested classes,
+              static initializers and instance initializers.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#EmptyStatement">EmptyStatement</a></td>
+            
+<td>Detects empty statements (standalone <code>";"</code> semicolon).</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#EqualsAvoidNull">EqualsAvoidNull</a></td>
+            
+<td>
+              Checks that any combination of String literals
+              is on the left side of an equals() comparison.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#EqualsHashCode">EqualsHashCode</a></td>
+            
+<td>
+              Checks that classes that either override <code>equals()</code>
+              or <code>hashCode()</code> also overrides the other.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#ExecutableStatementCount">
+              ExecutableStatementCount</a></td>
+            
+<td>Restricts the number of executable statements to a specified limit.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#ExplicitInitialization">ExplicitInitialization</a></td>
+            
+<td>
+              Checks if any class or object member is explicitly initialized to default
+              for its type value (<code>null</code> for object references, zero for numeric
+              types and <code>char</code> and <code>false</code> for <code>boolean</code>.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#FallThrough">FallThrough</a></td>
+            
+<td>Checks for fall-through in switch statements.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#FileLength">FileLength</a></td>
+            
+<td>
+            Checks for long source files.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#FileTabCharacter">FileTabCharacter</a></td>
+            
+<td>Checks that there are no tab characters ('\t') in the source code.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#FinalClass">FinalClass</a></td>
+            
+<td>
+              Checks that a class which has only private constructors
+            is declared as final.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#FinalLocalVariable">FinalLocalVariable</a></td>
+            
+<td>
+              Checks that local variables that never have their values changed are declared final.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#FinalParameters">FinalParameters</a></td>
+            
+<td>
+              Checks that parameters for methods, constructors, catch and for-each blocks are final.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#GenericWhitespace">GenericWhitespace</a></td>
+            
+<td>
+              Checks that the whitespace around the Generic tokens (angle brackets)
+              "&lt;" and "&gt;" are correct to the typical convention.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_header.html#Header">Header</a></td>
+            
+<td>Checks that a source file begins with a specified header.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#HiddenField">HiddenField</a></td>
+            
+<td>Checks that a local variable or a parameter does not shadow
+            a field that is defined in the same class.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#HideUtilityClassConstructor">
+              HideUtilityClassConstructor</a></td>
+            
+<td>Makes sure that utility classes (classes that contain only static
+              methods or fields in their API) do not have a public constructor.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalCatch">IllegalCatch</a></td>
+            
+<td>Checks that certain exception types do not appear in a catch statement.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_naming.html#IllegalIdentifierName">IllegalIdentifierName</a>
+            </td>
+            
+<td>
+              Checks identifiers with a regular expression for a set of illegal names, such as those
+              that are restricted or contextual keywords.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#IllegalImport">IllegalImport</a></td>
+            
+<td>
+            Checks for imports from a set of illegal packages.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalInstantiation">IllegalInstantiation</a></td>
+            
+<td>
+            Checks for illegal instantiations where a factory method is preferred.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalThrows">IllegalThrows</a></td>
+            
+<td>Checks that specified types are not declared to be thrown.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalToken">IllegalToken</a></td>
+            
+<td>
+            Checks for illegal tokens.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalTokenText">IllegalTokenText</a></td>
+            
+<td>
+              Checks specified tokens text for matching an illegal pattern.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#IllegalType">IllegalType</a></td>
+            
+<td>
+              Checks that particular classes or interfaces are never used.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#ImportControl">ImportControl</a></td>
+            
+<td>Controls what can be imported in each package and file.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#ImportOrder">ImportOrder</a></td>
+            
+<td>Checks the ordering/grouping of imports.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#Indentation">Indentation</a></td>
+            
+<td>Checks correct indentation of Java code.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#InnerAssignment">InnerAssignment</a></td>
+            
+<td>
+              Checks for assignments in subexpressions, such as in
+              <code>String s = Integer.toString(i = 2);</code>.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#InnerTypeLast">InnerTypeLast</a></td>
+            
+<td>
+              Checks nested (internal) classes/interfaces are declared at the bottom of the
+              primary (top-level) class after all init and static init blocks,
+              method, constructor and field declarations.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#InterfaceIsType">InterfaceIsType</a></td>
+            
+<td>Implements Joshua Bloch, Effective Java, Item 17 - Use Interfaces only to
+              define types.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_modifier.html#InterfaceMemberImpliedModifier">
+              InterfaceMemberImpliedModifier</a></td>
+            
+<td>
+              Checks for implicit modifiers on interface members and nested types.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#InterfaceTypeParameterName">
+              InterfaceTypeParameterName</a></td>
+            
+<td>
+              Checks that interface type parameter names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#InvalidJavadocPosition">
+              InvalidJavadocPosition</a></td>
+            
+<td>
+              Checks that Javadocs are located at the correct position.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocBlockTagLocation">
+              JavadocBlockTagLocation</a></td>
+            
+<td>Checks that a javadoc block tag appears only at the beginning of a line,
+              ignoring leading asterisks and white space.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocContentLocation">
+              JavadocContentLocation</a></td>
+            
+<td>
+              Checks that the Javadoc content begins from the same position
+              for all Javadoc comments in the project.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocMethod">JavadocMethod</a></td>
+            
+<td>Checks the Javadoc of a method or constructor.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocMissingLeadingAsterisk">JavadocMissingLeadingAsterisk</a>
+            </td>
+            
+<td>
+              Checks if the javadoc has
+              <a class="externalLink" href="https://docs.oracle.com/en/java/javase/14/docs/specs/javadoc/doc-comment-spec.html#leading-asterisks">
+                leading asterisks
+              </a>
+              on each line.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocMissingWhitespaceAfterAsterisk">JavadocMissingWhitespaceAfterAsterisk</a>
+            </td>
+            
+<td>Checks that there is at least one whitespace after the leading asterisk.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocPackage">JavadocPackage</a></td>
+            
+<td>Checks that each Java package has a Javadoc file used for commenting.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocParagraph">JavadocParagraph</a></td>
+            
+<td>Checks the Javadoc paragraph.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocStyle">JavadocStyle</a></td>
+            
+<td>Validates Javadoc comments to help ensure they are well formed.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocTagContinuationIndentation">
+              JavadocTagContinuationIndentation</a></td>
+            
+<td>Checks the indentation of the continuation lines in block tags.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocType">JavadocType</a></td>
+            
+<td>Checks the Javadoc comments for type definitions.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#JavadocVariable">JavadocVariable</a></td>
+            
+<td>Checks that a variable has a Javadoc comment.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#JavaNCSS">JavaNCSS</a></td>
+            
+<td>
+              Determines complexity of methods, classes and files by counting
+              the Non Commenting Source Statements (NCSS).
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#LambdaBodyLength">LambdaBodyLength</a></td>
+            
+<td>Checks lambda body length.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#LambdaParameterName">LambdaParameterName</a></td>
+            
+<td>Checks lambda parameter names.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#LeftCurly">LeftCurly</a></td>
+            
+<td>
+              Checks for the placement of left curly braces (<code>'{'</code>) for code blocks.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#LineLength">LineLength</a></td>
+            
+<td>Checks for long lines.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#LocalFinalVariableName">LocalFinalVariableName</a></td>
+            
+<td>
+              Checks that local final variable names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#LocalVariableName">LocalVariableName</a></td>
+            
+<td>
+              Checks that local, non-final variable names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MagicNumber">MagicNumber</a></td>
+            
+<td>
+              Checks that there are no "magic numbers" where a magic number
+              is a numeric literal that is not defined as a constant.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MatchXpath">MatchXpath</a></td>
+            
+<td>Evaluates Xpath query and report violation on all matching AST nodes.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#MemberName">MemberName</a></td>
+            
+<td>
+              Checks that instance variable names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#MethodCount">MethodCount</a></td>
+            
+<td>Checks the number of methods declared in each type declaration by access modifier
+            or total count.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#MethodLength">MethodLength</a></td>
+            
+<td>Checks for long methods and constructors.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#MethodName">MethodName</a></td>
+            
+<td>
+              Checks that method names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#MethodParamPad">MethodParamPad</a></td>
+            
+<td>
+              Checks the padding between the identifier of a method definition,
+              constructor definition, method call, or constructor invocation;
+            and the left parenthesis of the parameter list.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#MethodTypeParameterName">
+              MethodTypeParameterName</a></td>
+            
+<td>
+              Checks that method type parameter names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MissingCtor">MissingCtor</a></td>
+            
+<td>
+              Checks that classes (except abstract ones) define a constructor
+              and don't rely on the default one.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#MissingDeprecated">MissingDeprecated</a></td>
+            
+<td>
+              Verifies that the annotation <code>@Deprecated</code> and the Javadoc tag
+              <code>@deprecated</code> are both present when either of them is present.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#MissingJavadocMethod">MissingJavadocMethod</a></td>
+            
+<td>Checks for missing Javadoc comments for a method or constructor.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#MissingJavadocPackage">MissingJavadocPackage</a></td>
+            
+<td>Checks for missing Javadoc comments in package-info.java files.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#MissingJavadocType">MissingJavadocType</a></td>
+            
+<td>Checks for missing Javadoc comments for class, enum, interface, and annotation
+            interface definitions.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#MissingOverride">MissingOverride</a></td>
+            
+<td>
+              Verifies that the <code>@Override</code> annotation is present
+              when the <code>@inheritDoc</code> javadoc tag is present.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MissingSwitchDefault">MissingSwitchDefault</a></td>
+            
+<td>
+            Checks that switch statement has a <code>default</code> clause.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#ModifiedControlVariable">
+              ModifiedControlVariable</a></td>
+            
+<td>Checks that for loop control variables are not modified inside the for block.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_modifier.html#ModifierOrder">ModifierOrder</a></td>
+            
+<td>
+              Checks that the order of modifiers conforms to the suggestions in the
+              Java Language specification, § 8.1.1, 8.3.1, 8.4.3 and 9.4.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MultipleStringLiterals">MultipleStringLiterals</a></td>
+            
+<td>Checks for multiple occurrences of the same string literal within a
+            single file.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#MultipleVariableDeclarations">
+              MultipleVariableDeclarations</a></td>
+            
+<td>
+              Checks that each variable declaration is in its own statement
+            and on its own line.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#MutableException">MutableException</a></td>
+            
+<td>
+              Ensures that exception classes (classes with names conforming to
+              some regular expression and explicitly extending classes with names
+              conforming to other regular expression) are immutable, that is,
+              that they have only final fields.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#NeedBraces">NeedBraces</a></td>
+            
+<td>
+            Checks for braces around code blocks.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NestedForDepth">NestedForDepth</a></td>
+            
+<td>Restricts nested <code>for</code> blocks to a specified depth.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NestedIfDepth">NestedIfDepth</a></td>
+            
+<td>Restricts nested if-else blocks to a specified depth.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NestedTryDepth">NestedTryDepth</a></td>
+            
+<td>Restricts nested try-catch-finally blocks to a specified depth.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#NewlineAtEndOfFile">NewlineAtEndOfFile</a></td>
+            
+<td>
+              Checks whether files end with a line separator.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NoArrayTrailingComma">NoArrayTrailingComma</a></td>
+            
+<td>Checks that array initialization do not contain a trailing comma.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NoClone">NoClone</a></td>
+            
+<td>
+              Checks that the clone method is not overridden from the
+            Object class.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#NoCodeInFile">NoCodeInFile</a></td>
+            
+<td>
+              Checks whether file contains code.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NoFinalizer">NoFinalizer</a></td>
+            
+<td>Checks that there is no method <code>finalize</code> with zero parameters.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#NoLineWrap">NoLineWrap</a></td>
+            
+<td>
+            Checks that chosen statements are not line-wrapped.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#NonEmptyAtclauseDescription">
+              NonEmptyAtclauseDescription</a></td>
+            
+<td>
+            Checks that the block tag is followed by description.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#NoEnumTrailingComma">NoEnumTrailingComma</a></td>
+            
+<td>Checks that enum definition does not contain a trailing comma.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#NoWhitespaceAfter">NoWhitespaceAfter</a></td>
+            
+<td>
+            Checks that there is no whitespace after a token.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#NoWhitespaceBefore">NoWhitespaceBefore</a></td>
+            
+<td>
+            Checks that there is no whitespace before a token.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_metrics.html#NPathComplexity">NPathComplexity</a></td>
+            
+<td>Checks the NPATH complexity against a specified limit.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#OneStatementPerLine">OneStatementPerLine</a></td>
+            
+<td>Checks that there is only one statement per line.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#OneTopLevelClass">OneTopLevelClass</a></td>
+            
+<td>Checks that each top-level class, interface, enum or annotation resides in
+              a source file of its own.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#OperatorWrap">OperatorWrap</a></td>
+            
+<td>Checks the policy on how to wrap lines on operators.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#OrderedProperties">OrderedProperties</a></td>
+            
+<td>Detects if keys in properties files are in correct order.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#OuterTypeFilename">OuterTypeFilename</a></td>
+            
+<td>Checks that the outer type name and the file name match.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#OuterTypeNumber">OuterTypeNumber</a></td>
+            
+<td>
+              Checks for the number of types declared at the <i>outer</i>
+              (or <i>root</i>) level in a file.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#OverloadMethodsDeclarationOrder">
+              OverloadMethodsDeclarationOrder</a></td>
+            
+<td>Checks that overloaded methods are grouped together.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#PackageAnnotation">PackageAnnotation</a></td>
+            
+<td>Checks that all package annotations are in the package-info.java file.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#PackageDeclaration">PackageDeclaration</a></td>
+            
+<td>
+              Ensures that a class has a package declaration, and (optionally) whether
+              the package name matches the directory name for the source file.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#PackageName">PackageName</a></td>
+            
+<td>
+              Checks that package names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#ParameterAssignment">ParameterAssignment</a></td>
+            
+<td>
+            Disallows assignment of parameters.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#ParameterName">ParameterName</a></td>
+            
+<td>
+              Checks that method parameter names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#ParameterNumber">ParameterNumber</a></td>
+            
+<td>Checks the number of parameters of a method or constructor.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#ParenPad">ParenPad</a></td>
+            
+<td>
+              Checks the policy on the padding of parentheses; that is whether a
+              space is required after a left parenthesis and before a right
+              parenthesis, or such spaces are forbidden.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#PatternVariableName">PatternVariableName</a></td>
+            
+<td>
+              Checks that pattern variable names conform to a specified pattern.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_sizes.html#RecordComponentNumber">RecordComponentNumber</a></td>
+            
+<td>Checks the number of record components in the header of a record definition.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_naming.html#RecordComponentName">RecordComponentName</a>
+            </td>
+            
+<td>
+              Checks that record component names conform to a specified pattern.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_naming.html#RecordTypeParameterName">RecordTypeParameterName</a>
+            </td>
+            
+<td>
+              Checks that record type parameter names conform to a specified pattern.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#RedundantImport">RedundantImport</a></td>
+            
+<td>Checks for redundant import statements.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_modifier.html#RedundantModifier">RedundantModifier</a></td>
+            
+<td>Checks for redundant modifiers.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_regexp.html#Regexp">Regexp</a></td>
+            
+<td>
+              Checks that a specified pattern exists, exists less than a set
+              number of times, or does not exist in the file.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_header.html#RegexpHeader">RegexpHeader</a></td>
+            
+<td>
+              Checks the header of a source file against a header that contains
+              a regular expression for each line of the source header.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_regexp.html#RegexpMultiline">RegexpMultiline</a></td>
+            
+<td>Checks that a specified pattern matches across multiple lines in
+            any file type.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_regexp.html#RegexpOnFilename">RegexpOnFilename</a></td>
+            
+<td>Checks that a specified pattern matches based on file and/or folder path.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_regexp.html#RegexpSingleline">RegexpSingleline</a></td>
+            
+<td>Checks that a specified pattern matches a single line in any file type.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_regexp.html#RegexpSinglelineJava">RegexpSinglelineJava</a></td>
+            
+<td>Checks that a specified pattern matches a single line in Java files.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#RequireThis">RequireThis</a></td>
+            
+<td>
+              Checks that references to instance variables and methods of the present
+              object are explicitly of the form "this.varName" or
+              "this.methodName(args)" and that those references don't
+              rely on the default behavior when "this." is absent.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#ReturnCount">ReturnCount</a></td>
+            
+<td>
+              Restricts the number of return statements in methods, constructors
+              and lambda expressions.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_blocks.html#RightCurly">RightCurly</a></td>
+            
+<td>Checks the placement of right curly braces (<code>'}'</code>) for code blocks.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#SeparatorWrap">SeparatorWrap</a></td>
+            
+<td>
+            Checks line wrapping with separators.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#SimplifyBooleanExpression">
+              SimplifyBooleanExpression</a></td>
+            
+<td>Checks for over-complicated boolean expressions.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#SimplifyBooleanReturn">SimplifyBooleanReturn</a></td>
+            
+<td>Checks for over-complicated boolean return statements.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#SingleLineJavadoc">SingleLineJavadoc</a></td>
+            
+<td>
+              Checks that a Javadoc block can fit in a single line and doesn't contain
+              block tags.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#RequireEmptyLineBeforeBlockTagGroup">
+              RequireEmptyLineBeforeBlockTagGroup</a></td>
+            
+<td>
+              Checks that one blank line before the block tag if it is present in Javadoc.
+            </td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#SingleSpaceSeparator">SingleSpaceSeparator</a></td>
+            
+<td>
+             Checks that non-whitespace characters are separated by no more than one
+              whitespace.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#StaticVariableName">StaticVariableName</a></td>
+            
+<td>
+              Checks that <code>static</code>, non-<code>final</code> variable names
+              conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_coding.html#StringLiteralEquality">StringLiteralEquality</a>
+            </td>
+            
+<td>Checks that string literals are not used with
+              <code>==</code> or <code>!=</code>.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#SummaryJavadoc">SummaryJavadoc</a></td>
+            
+<td>
+            Checks that Javadoc summary sentence does not contain phrases that are not recommended
+            to use.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#SuperClone">SuperClone</a></td>
+            
+<td>
+            Checks that an overriding clone() method invokes super.clone().</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#SuperFinalize">SuperFinalize</a></td>
+            
+<td>
+            Checks that an overriding finalize() method invokes super.finalize().</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#SuppressWarnings">SuppressWarnings</a></td>
+            
+<td>
+              Allows to specify what warnings that <code>@SuppressWarnings</code>
+              is not allowed to suppress.
+            </td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#ThrowsCount">ThrowsCount</a></td>
+            
+<td>
+            Restricts throws statements to a specified count.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#TodoComment">TodoComment</a></td>
+            
+<td>
+            Checks for TODO: comments.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#TrailingComment">TrailingComment</a></td>
+            
+<td>
+            The check to ensure that requires that comments be the only thing on a line.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#Translation">Translation</a></td>
+            
+<td>
+              Ensures the correct translation of code by checking property files
+              for consistency regarding their keys.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#TypecastParenPad">TypecastParenPad</a></td>
+            
+<td>Checks the policy on the padding of parentheses for typecasts.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_naming.html#TypeName">TypeName</a></td>
+            
+<td>
+              Checks that type names conform to a specified pattern.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#UncommentedMain">UncommentedMain</a></td>
+            
+<td>Detects uncommented <code>main</code> methods.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#UniqueProperties">UniqueProperties</a></td>
+            
+<td>Detects duplicated keys in properties files.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#UnnecessaryParentheses">UnnecessaryParentheses</a></td>
+            
+<td>
+            Checks if unnecessary parentheses are used in a statement or expression.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_coding.html#UnnecessarySemicolonInEnumeration">
+              UnnecessarySemicolonInEnumeration</a>
+            </td>
+            
+<td>Checks if unnecessary semicolon is in enum definitions.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td>
+              <a href="https://checkstyle.sourceforge.io/config_coding.html#UnnecessarySemicolonInTryWithResources">
+              UnnecessarySemicolonInTryWithResources</a>
+            </td>
+            
+<td>Checks if unnecessary semicolon is used in last resource declaration.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#UnnecessarySemicolonAfterOuterTypeDeclaration">
+              UnnecessarySemicolonAfterOuterTypeDeclaration</a></td>
+            
+<td>Checks if unnecessary semicolon is used after type declaration.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#UnnecessarySemicolonAfterTypeMemberDeclaration">
+              UnnecessarySemicolonAfterTypeMemberDeclaration</a></td>
+            
+<td>Checks if unnecessary semicolon is used after type member declaration.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_imports.html#UnusedImports">UnusedImports</a></td>
+            
+<td>
+            Checks for unused import statements.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_misc.html#UpperEll">UpperEll</a></td>
+            
+<td>Checks that long constants are defined with an upper ell.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_coding.html#VariableDeclarationUsageDistance">
+              VariableDeclarationUsageDistance</a></td>
+            
+<td>Checks the distance between declaration of variable and its first usage.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_design.html#VisibilityModifier">VisibilityModifier</a></td>
+            
+<td>Checks visibility of class members.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#WhitespaceAfter">WhitespaceAfter</a></td>
+            
+<td>
+              Checks that a token is followed by whitespace, with the exception that it
+            does not check for whitespace after the semicolon of an empty for iterator.</td>
+          </tr>
+          
+<tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_whitespace.html#WhitespaceAround">WhitespaceAround</a></td>
+            
+<td>
+            Checks that a token is surrounded by whitespace.</td>
+          </tr>
+          
+<tr class="b">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_javadoc.html#WriteTag">WriteTag</a></td>
+            
+<td>
+              Requires user defined Javadoc tag to be present in Javadoc comment
+              with defined format.
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </section>
+
+    <section>
+<h2><a name="Holder_Checks"></a>Holder Checks<div class="anchor"><a href="https://checkstyle.sourceforge.io/checks.html#Holder_Checks"><img src="./checkstyle – Checks_files/anchor.png"></a></div></h2>
+      
+<p>
+        These checks aren't normal checks and are usually associated with a specialized filter
+        to gather information the filter can't get on it's own.
+      </p>
+
+      
+<div class="wrapper">
+        
+<table border="0" class="bodyTable">
+          
+<tbody><tr class="a">
+            
+<td><a href="https://checkstyle.sourceforge.io/config_annotation.html#SuppressWarningsHolder">
+              SuppressWarningsHolder</a></td>
+            
+<td>
+              Maintains a set of check suppressions from
+              <code>@SuppressWarnings</code> annotations.
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </section>
+  
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr>
+    </div>
+    <div id="footer">
+      <div class="xright">
+        Copyright ©      2001–2021..      </div>
+      <div class="clear">
+        <hr>
+      </div>
+    </div>
+  
+
+</body></html>
