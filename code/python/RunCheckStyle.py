@@ -1,19 +1,28 @@
 import os
 
 
-path = 'C:\\github-repos\\'
-output_path = 'C:\\checkstyle-logs\\'
-files = []
+repos_path = '~/src/'
+output_path = '/tmp/checkstyle_output/'
+checkstyle_jar = '~/Downloads/checkstyle-8.23-all.jar' # original version
+config='~/src/follow-your-nose/code/config/follow_your_nose_checks.xml'
+
+checkstyle_cmd_template = \
+    'java -cp {jar} com.puppycrawl.tools.checkstyle.Main -c {config} {repos_path} > {output_path}{repo}.txt '
 
 err_dirs = []
-repos = os.listdir(path)
+#repos = os.listdir(path)
+repos = ['batfish']
 for repo in repos:
     try:
-        repo_path = os.path.join(path, repo)
+        repo_path = os.path.join(repos_path, repo)
         print("working on " + repo_path)
-        curDirCheckStyleCmd = 'java -cp C:\\checkstyle\\checkstyle-8.23-all.jar com.puppycrawl.tools.checkstyle.Main -c sun_checks.xml ' \
-                              + repo_path + ' > C:\\checkstyle-logs\\' + repo + '.out'
-        a = os.system(curDirCheckStyleCmd)
+        checkstyle_cmd = checkstyle_cmd_template.format(jar=checkstyle_jar
+                                                        , config=config
+                                                        , repos_path=repos_path
+                                                        , output_path=output_path
+                                                        , repo=repo)
+        print(checkstyle_cmd) # Useful for manual manipulations
+        a = os.system(checkstyle_cmd)
         if a < 0:
             err_dirs.append(repo_path)
 
