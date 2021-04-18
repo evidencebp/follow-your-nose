@@ -39,7 +39,7 @@
     <!-- Checks that a package-info.java file exists for each package.     -->
     <!-- See https://checkstyle.org/config_javadoc.html#JavadocPackage -->
     <module name="JavadocPackage"/>
-	
+
 
 
 
@@ -74,7 +74,7 @@
     <!--   <property name="headerFile" value="${checkstyle.header.file}"/> -->
     <!--   <property name="fileExtensions" value="java"/> -->
     <!-- </module> -->
-	
+
 
 
     <module name="TreeWalker">
@@ -91,7 +91,7 @@
 		<module name="IllegalCatch"/>
 		<module name="ParameterAssignment"/>
 		<module name="UnnecessaryParentheses"/>
-		
+
 
     </module>
 
