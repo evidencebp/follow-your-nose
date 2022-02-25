@@ -29,3 +29,4 @@ See here the [general database construction](https://github.com/evidencebp/gener
 Research used the model of commit d15d54e
 Repository will keep advancing.
 
+In order to replicate, please use code/python/main.py
