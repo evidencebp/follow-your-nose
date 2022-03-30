@@ -13,7 +13,7 @@ def print_influence_tables(stats
                            , rows=50):
 
     display_dict = {'feature': 'Smell'
-                    , 'Group' : 'Group'
+                    , 'Group' : 'CheckStyle Group'
                     # , 'Pearson' : 'Pearson'
         , 'precision': 'Precision'
         , RELATIVE_MEAN_PREFIX + concept: 'Mean' # todo - add mean
