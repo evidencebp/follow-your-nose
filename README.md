@@ -13,6 +13,8 @@ Please cite as
 }
 ```
 
+In order to replicate follow code/python/main.py
+
 See here the [linguistic commit classification](https://github.com/evidencebp/commit-classification)
 
 Research used the model of commit 99b7bbe
