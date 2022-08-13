@@ -15,22 +15,23 @@ def print_smells_proprties_table():
                     , JOINT_STATS_TEMPLATE.format(concept=i))
         df = pd.read_csv(file)
 
+        smells = len(df)
         record = []
         record.append(CONCEPT_NAMES[i])
         record.append(len(potential_smells(df
-                                       , i)))
+                                       , i))/smells)
         record.append(len(robust_smells(df
-                      , i)))
+                      , i))/smells)
         record.append(len(almost_robust_smells(df
-                                           , i)))
+                                           , i))/smells)
 
         record.append(len(predictive_features(df
-                                , i)))
-        record.append(len(cochange_features(df)))
+                                , i))/smells)
+        record.append(len(cochange_features(df))/smells)
 
-        record.append(len(twins_features(df)))
-        record.append(len(monotonicity_features(df)))
-        record.append(len(length_features(df)))
+        record.append(len(twins_features(df))/smells)
+        record.append(len(monotonicity_features(df))/smells)
+        record.append(len(length_features(df))/smells)
 
         records.append(record)
 
@@ -54,7 +55,7 @@ def print_smells_proprties_table():
     df_to_latex_table(
         table_df
         , title
-        , rounding_digits=0)
+        , rounding_digits=2)
     print()
 
 
