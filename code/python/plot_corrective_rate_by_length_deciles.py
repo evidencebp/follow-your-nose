@@ -13,8 +13,8 @@ def plot_duration_by_length():
 
     fig = plot_deciles(df
                  , grouping_column='line_count'
-                 , metric_column='CCP'
-                 , title='CCP by Line Count Deciles'
+                 , metric_column='corrective_rate'
+                 , title='Corrective Commits Ratio by Line Count Deciles'
                  , xaxis_title='Number of Lines'
                  , output_file=None)
     fig.show()
