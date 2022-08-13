@@ -1,7 +1,7 @@
 from os.path import join
 import sys
 
-ANALYSIS_PATH = '/Users/idan/src/analysis_utils'
+ANALYSIS_PATH = 'c:/src/analysis_utils'
 sys.path.append(ANALYSIS_PATH)
 
 from cochange_analysis import the_lower_the_better, the_higher_the_better
@@ -10,7 +10,7 @@ REPOS_DIRECTORY = r'C:\\github-repos\\'
 CHECKSTYLE_LOGS_DIRECTORY = r'C:\Users\Nili\Documents\GitHub\hotspots\data\agg-checkstyle-logs'
 CHECKSTYLE_ERROR_FILE = r"C:\Users\Nili\Documents\GitHub\hotspots\data\err_java_dir.txt"
 
-BASE_PATH = r'/Users/idan/src/follow-your-nose/'
+BASE_PATH = r'c:/src/follow-your-nose/'
 DATA_PATH = BASE_PATH + r'data/'
 FIGURES_PATH = BASE_PATH + r'figures/'
 PERFORMANCE_PATH = BASE_PATH + r'performance/'
