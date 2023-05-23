@@ -17,17 +17,17 @@ def file_by_author_twin_analysis():
 
     keys= ['repo_name', 'Author_email']
     filtering_function = lambda x: x.full_file_name_x == x.full_file_name_y
-    comparision_function= lambda first, second : second > first \
+    comparison_function= lambda first, second : second > first \
         if isinstance(first, numbers.Number) and isinstance(second, numbers.Number) \
         else None
 
-    comparision_columns = SINGLE_SMELL + [CCP, 'full_file_name'] # TODO - ADD groups
+    comparison_columns = SINGLE_SMELL + [CCP, 'full_file_name'] # TODO - ADD groups
 
     comp_df = compare_twin_behaviours(first_behaviour=single_author_files
                                         , second_behaviour=single_author_files
                                         , keys=keys
-                                        , comparision_columns=comparision_columns
-                                        , comparision_function=comparision_function
+                                        , comparison_columns=comparison_columns
+                                        , comparison_function=comparison_function
                                         , filtering_function=filtering_function)
 
     comp_df.to_csv(os.path.join(DATA_PATH, 'file_by_author_twin_analysis.csv'))
